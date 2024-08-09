@@ -1,7 +1,20 @@
+"use client";
 import React from "react";
+import SideNav from "../../_components/SideNav";
 
-function WorkspaceDocument() {
-  return <div>WorkspaceDocument</div>;
+function WorkspaceDocument({ params }) {
+  return (
+    <div>
+      {/* Side Nav */}
+      <div>
+        <SideNav params={params} />
+      </div>
+
+      {/* Document */}
+
+      <div className="md:ml-72">Document</div>
+    </div>
+  );
 }
 
 export default WorkspaceDocument;
